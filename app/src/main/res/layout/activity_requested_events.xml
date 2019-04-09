@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/Pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="20dip"
+            android:text="@string/pending"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/pendingCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dip"
+            android:paddingBottom="20dip"
+            android:text="0 Results"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Pending" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_pending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/pendingCount" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/Approved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="20dip"
+            android:text="Approved"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_pending" />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/approvedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dip"
+            android:paddingBottom="20dip"
+            android:text="0 Results"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Approved" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_approved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/approvedCount" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/DisApproved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="20dip"
+            android:text="Disapproved"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_approved" />
+
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/disApprovedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dip"
+            android:paddingBottom="20dip"
+            android:text="0 Results"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DisApproved" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_disapproved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/disApprovedCount" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/Unavaiable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="20dip"
+            android:text="Log in as Admin or User to access controls."
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/Controls"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/Controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:visibility="invisible"
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+
+                app:srcCompat="@android:drawable/ic_menu_add" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:visibility="invisible"
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@android:drawable/ic_input_delete" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:visibility="invisible"
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@android:drawable/ic_menu_send" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

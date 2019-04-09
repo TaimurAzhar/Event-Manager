@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Accounts.SignUpActivity">
+
+
+<LinearLayout
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation ="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="40dp"
+    android:id = "@+id/Registerview" >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingBottom="15dp"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/star" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="Admin" />
+
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="Student" />
+
+        <RadioButton
+            android:id="@+id/outs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="Outsider" />
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#FFF">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+
+            android:id = "@+id/email"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+        android:id="@+id/id1"
+        android:textColorHint="#FFF">
+
+         <android.support.design.widget.TextInputEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="number"
+             android:textColorHint="@color/colorHint"
+
+             android:hint="Registration Number"
+             android:id="@+id/id"
+             android:textColor="@color/colorPrimaryDark" />
+     </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/name1"
+        android:textColorHint="#FFF">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Username"
+            android:textColorHint="@color/colorHint"
+
+            android:id = "@+id/name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#FFF">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:id = "@+id/password"
+            android:textColorHint="@color/colorHint"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:imeActionId="6"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:onClick="buttonOnClick"
+            android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/school1"
+        android:textColorHint="#FFF">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="School"
+            android:id = "@+id/school"
+            android:textColorHint="@color/colorHint"
+
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/batch1"
+        android:textColorHint="#FFF">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Batch"
+            android:textColorHint="@color/colorHint"
+
+            android:id = "@+id/batch"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/email_sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="buttonOnClick"
+        android:text="Register"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="20sp"
+            android:text="Confirm"
+            android:onClick="buttonOnClick"/>
+
+        <Button
+            android:id="@+id/change"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:onClick="buttonOnClick"
+            android:background="@null"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/link_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Log in."
+        android:gravity="center"
+        android:textSize="16dip"/>
+
+</LinearLayout>
+</RelativeLayout>
+
