@@ -23,5 +23,5 @@ Add Event - 1               |  Add Event - 2
 ![NEP](screenshots/AdminDashboard.jpg?raw=true "NEP")|  ![NEP](screenshots/StudentDashboard.jpg?raw=true "NEP")
 
 Filters        |  
-:-------------------------:|:-------------------------:
+:-------------------------:|
 ![NEP](screenshots/CategoryFilters.jpg?raw=true "NEP")|  
