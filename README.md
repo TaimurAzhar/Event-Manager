@@ -1,5 +1,12 @@
 # NUST-Event-Planner
-An application designed for NUST. Track all events across campus or add your own! Enjoy student/admin privileges.
+Project application designed for NUST. Track all events across campus or add your own! Enjoy student/admin privileges. Made in collaboration with other students.
+
+Members:
+Taimur Azhar (me)
+[Noor Binte Amir] (https://github.com/NBAMIR)
+[Hammad Aamer] (https://github.com/madham32)
+
+Members 
 
 ## Screenshots
 
