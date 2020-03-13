@@ -7,8 +7,6 @@ Members:
 [Noor Binte Amir](https://github.com/NBAMIR)
 <!-- [Hammad Aamer](https://github.com/madham32) -->
 
-Members 
-
 ## Screenshots
 
 EventBoard                  |  Event Page       
