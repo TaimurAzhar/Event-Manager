@@ -1,10 +1,10 @@
 # NUST-Event-Planner
 Project application designed for NUST. Track all events across campus or add your own! Enjoy student/admin privileges. Made in collaboration with other students.
-
+s
 Members:
-Taimur Azhar (me)
-[Noor Binte Amir] (https://github.com/NBAMIR)
-[Hammad Aamer] (https://github.com/madham32)
+[Taimur Azhar](https://github.com/TaimurAzhar) (Me)
+[Noor Binte Amir](https://github.com/NBAMIR)
+<!-- [Hammad Aamer](https://github.com/madham32) -->
 
 Members 
 
@@ -22,6 +22,6 @@ Add Event - 1               |  Add Event - 2
 :-------------------------:|:-------------------------:
 ![NEP](screenshots/AdminDashboard.jpg?raw=true "NEP")|  ![NEP](screenshots/StudentDashboard.jpg?raw=true "NEP")
 
- Time Filter        |  Category Filter
+Filters        |  
 :-------------------------:|:-------------------------:
-![NEP](screenshots/TimeFilters.jpg?raw=true "NEP")|  ![NEP](screenshots/CategoryFilters.jpg?raw=true "NEP")
+![NEP](screenshots/CategoryFilters.jpg?raw=true "NEP")|  
